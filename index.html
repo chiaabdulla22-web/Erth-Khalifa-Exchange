@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ku" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Erth Khalifa Exchange | کۆمپانیای ئەرزی خەلیفە</title>
+<meta name="description" content="Erth Khalifa Exchange - نرخی ڕاستەوخۆی دراوەکان">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap');
+:root{--navy:#102a56;--navy2:#173b73;--silver:#a7adb8;--green:#159447;--red:#d93b3b;--bg:#f6f8fb;--text:#172033;--muted:#667085;--card:#fff;--shadow:0 18px 50px rgba(16,42,86,.12)}
+*{box-sizing:border-box}body{margin:0;font-family:'Noto Sans Arabic',Arial,sans-serif;color:var(--text);background:var(--bg)}a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(10,29,58,.94);backdrop-filter:blur(14px);color:#fff}.navin{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px}.brand-logo{width:54px;height:54px;background:#fff;border-radius:50%;padding:4px;display:grid;place-items:center}.brand b{font-size:19px;display:block}.brand small{opacity:.72;font-size:11px}.links{display:flex;gap:28px;font-size:14px;font-weight:600}.links a:hover{opacity:.7}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:12px 20px;font-weight:700;cursor:pointer}.btn-outline{color:#fff;border:1px solid rgba(255,255,255,.35);background:transparent}.btn-primary{background:#fff;color:var(--navy)}
+
+/* Contact Dropdown Styling */
+.contact-dropdown{position:relative;display:inline-block}
+.dropdown-content{display:none;position:absolute;left:0;top:110%;background:#fff;color:var(--text);min-width:260px;box-shadow:0 10px 30px rgba(0,0,0,.2);border-radius:14px;padding:15px;z-index:100;border:1px solid #e7eaf0}
+.dropdown-content a{display:block;padding:8px 10px;color:var(--navy);font-weight:600;border-radius:8px;font-size:13px;direction:ltr;text-align:right}
+.dropdown-content a:hover{background:#f0f4f9}
+.dropdown-content .email-link{text-align:center;font-size:12px;color:var(--muted);border-top:1px solid #eee;margin-top:5px;padding-top:8px}
+.contact-dropdown:hover .dropdown-content{display:block}
+
+.hero{min-height:620px;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(10,29,58,.88),rgba(10,29,58,.45)),url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2000&q=90') center/cover}.hero:after{content:'';position:absolute;inset:auto 0 0;height:160px;background:linear-gradient(transparent,var(--bg))}.hero-content{position:relative;z-index:2;padding:105px 0 180px;color:#fff;max-width:650px}.eyebrow{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:7px 13px;border-radius:999px;font-size:13px}.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.12;margin:22px 0 14px;font-weight:800}.hero h1 span{color:#cfd5de}.hero p{font-size:19px;line-height:2;margin:0 0 26px;color:#f1f4f8}.actions{display:flex;gap:12px;flex-wrap:wrap}.actions .btn-primary{background:var(--navy);color:#fff}.actions .btn-light{background:#fff;color:var(--navy)}
+.rates{position:relative;z-index:5;margin-top:-125px}.rate-card{background:rgba(255,255,255,.97);border:1px solid #e6e9ef;border-radius:22px;box-shadow:var(--shadow);overflow:hidden}.rate-top{padding:20px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e8ebf0}.live{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}.dot{width:9px;height:9px;border-radius:50%;background:#16a34a;box-shadow:0 0 0 5px rgba(22,163,74,.1)}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:16px 18px;text-align:right;border-bottom:1px solid #edf0f4}.table th{background:var(--navy);color:#fff;font-size:13px}.table td{font-weight:600}.currency{display:flex;align-items:center;gap:12px}.flag{width:34px;height:24px;display:grid;place-items:center;border-radius:6px;background:#eef2f7;font-size:19px}.buy{color:var(--green);font-weight:800}.sell{color:var(--red);font-weight:800}.update{padding:14px 22px;color:var(--muted);font-size:12px;background:#fafbfc}
+.features{padding:70px 0 20px}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.feature{background:#fff;border-radius:18px;padding:26px 20px;text-align:center;box-shadow:0 8px 30px rgba(16,42,86,.06)}.icon{width:55px;height:55px;margin:0 auto 15px;border-radius:16px;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:25px}.feature h3{margin:0 0 8px;font-size:17px}.feature p{margin:0;color:var(--muted);font-size:13px;line-height:1.9}
+
+.about{padding:55px 0}.about-box{background:#fff;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1.15fr}.about-img{min-height:360px;background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=85') center/cover}.about-copy{padding:48px}.tag{color:var(--navy);font-weight:800}.about h2{font-size:32px;margin:8px 0 14px}.about p{color:var(--muted);line-height:2;font-size:15px}.contact-mini{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:25px}.mini{border:1px solid #e7eaf0;border-radius:14px;padding:14px}.mini b{display:block;margin-bottom:3px}.mini span{color:var(--muted);font-size:12px}
+.cta{padding:25px 0 70px}.cta-box{background:linear-gradient(135deg,var(--navy),#244d89);color:#fff;border-radius:22px;padding:25px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px}.cta-box h3{margin:0 0 5px}.cta-box p{margin:0;opacity:.78;font-size:13px}
+footer{background:#0b2143;color:#fff;padding:50px 0 18px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:30px}.footer-brand .brand-logo{width:65px;height:65px;margin-bottom:12px}.footer h4{margin:0 0 14px}.footer p,.footer li{color:#b9c4d5;font-size:13px;line-height:2}.footer ul{list-style:none;margin:0;padding:0}.bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:35px;padding-top:15px;display:flex;justify-content:space-between;color:#9eabc0;font-size:11px}
+@media(max-width:850px){.links{display:none}.feature-grid{grid-template-columns:repeat(2,1fr)}.about-box{grid-template-columns:1fr}.about-img{min-height:250px}.footer-grid{grid-template-columns:repeat(2,1fr)}.hero-content{padding-top:75px}.table{font-size:13px}.table th,.table td{padding:13px 10px}.brand b{font-size:16px}}
+@media(max-width:560px){.navin{height:68px}.hero{min-height:540px}.hero-content{padding:65px 0 150px}.hero p{font-size:15px}.rates{margin-top:-105px}.feature-grid{grid-template-columns:1fr}.contact-mini{grid-template-columns:1fr}.about-copy{padding:28px}.about h2{font-size:26px}.cta-box{flex-direction:column;align-items:flex-start}.footer-grid{grid-template-columns:1fr}.bottom{flex-direction:column;gap:8px}}
+</style></head>
+<body>
+<header class="nav">
+  <div class="container navin">
+    <a class="brand" href="#">
+      <div class="brand-logo">
+        <svg viewBox="0 0 200 200" width="100%" height="100%">
+          <path d="M100 15 A 85 85 0 0 1 185 100" fill="none" stroke="#8a94a6" stroke-width="8" stroke-linecap="round"/>
+          <path d="M185 100 L175 88 M185 100 L195 88" stroke="#8a94a6" stroke-width="8" stroke-linecap="round"/>
+          <path d="M100 185 A 85 85 0 0 1 15 100" fill="none" stroke="#8a94a6" stroke-width="8" stroke-linecap="round"/>
+          <path d="M100 185 L112 175 M100 185 L112 195" stroke="#8a94a6" stroke-width="8" stroke-linecap="round"/>
+          <path d="M75 38 L75 162 M75 100 L145 162 M75 115 L145 53" stroke="#102a56" stroke-width="22" stroke-linecap="square"/>
+          <path d="M40 145 C 50 80, 110 50, 150 42" fill="none" stroke="#8a94a6" stroke-width="14" stroke-linecap="round"/>
+          <path d="M150 42 L132 42 M150 42 L145 58" stroke="#8a94a6" stroke-width="12" stroke-linecap="round"/>
+          <circle cx="112" cy="58" r="11" fill="#fff" stroke="#102a56" stroke-width="3"/>
+          <text x="112" y="63" font-family="Arial" font-size="14" font-weight="bold" fill="#102a56" text-anchor="middle">$</text>
+        </svg>
+      </div>
+      <div><b>Erth Khalifa</b><small>Exchange • خاکی خەلیفە</small></div>
+    </a>
+    <nav class="links">
+      <a href="#rates">نرخی دراو</a>
+      <a href="#about">دەربارەمان</a>
+      <a href="#services">خزمەتگوزارییەکان</a>
+      <a href="#contact">پەیوەندیکردن</a>
+    </nav>
+    <div class="contact-dropdown">
+      <button class="btn btn-outline">📲 پەیوەندیکردن</button>
+      <div class="dropdown-content">
+        <a href="tel:07501062444">📞 0750 106 2444</a>
+        <a href="tel:07701062444">📞 0770 106 2444</a>
+        <a href="tel:07704097030">📞 0770 409 7030</a>
+        <div class="email-link">✉️ kalifaexchange7@gmail.com</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <span class="eyebrow">● نرخی ڕاستەوخۆ • ٢٤/٧ زانیاری</span>
+    <h1>Erth Khalifa<br><span>Exchange</span></h1>
+    <p>کۆمپانیای ئەرزی خەلیفە</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#rates">💱 بینینی نرخەکان</a>
+      <a class="btn btn-light" href="https://wa.me/9647501062444" target="_blank">WhatsApp ↗️</a>
+    </div>
+  </div>
+</section>
+
+<section class="rates container" id="rates">
+  <div class="rate-card">
+    <div class="rate-top">
+      <strong>نرخی ڕاستەوخۆی دراوەکان</strong>
+      <span class="live"><i class="dot"></i> نوێکراوەتەوە</span>
+    </div>
+    <table class="table">
+      <thead>
+        <tr><th>دراو</th><th>ناو</th><th>کڕین (Buy)</th><th>فرۆشتن (Sell)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><div class="currency"><span class="flag">🇺🇸</span><b>USD</b></div></td><td>دۆلاری ئەمریکی</td><td class="buy">153,000</td><td class="sell">153,500</td></tr>
+        <tr><td><div class="currency"><span class="flag">🇪🇺</span><b>EUR</b></div></td><td>یۆرۆ</td><td class="buy">165,000</td><td class="sell">165,800</td></tr>
+        <tr><td><div class="currency"><span class="flag">🇹🇷</span><b>TRY</b></div></td><td>لیرەی تورکی</td><td class="buy">4,150</td><td class="sell">4,250</td></tr>
+        <tr><td><div class="currency"><span class="flag">🇬🇧</span><b>GBP</b></div></td><td>پاوندی بەریتانی</td><td class="buy">193,000</td><td class="sell">194,000</td></tr>
+        <tr><td><div class="currency"><span class="flag">🇦🇪</span><b>AED</b></div></td><td>دەرھەمی ئیماراتی</td><td class="buy">41,500</td><td class="sell">42,100</td></tr>
+        <tr><td><div class="currency"><span class="flag">🇸🇦</span><b>SAR</b></div></td><td>ریاڵی سعودی</td><td class="buy">40,600</td><td class="sell">41,200</td></tr>
+      </tbody>
+    </table>
+    <div class="update">دوا نوێکردنەوە: <b id="last-update-time">--:--</b> • نرخەکان لە گۆڕاندنی بەردەوامدان.</div>
+  </div>
+</section>
+
+<section class="features container" id="services">
+  <div class="feature-grid">
+    <div class="feature"><div class="icon">✓</div><h3>متمانە و بەرپرسیاری</h3><p>خزمەتگوزارییەکی ڕوون و متمانەپێکراو بۆ کڕیارەکان.</p></div>
+    <div class="feature"><div class="icon">⇄</div><h3>نرخی باشتر</h3><p>نرخەکان بە شێوەیەکی سادە و ڕوون پیشان دەدرێن.</p></div>
+    <div class="feature"><div class="icon">◷</div><h3>خێرایی لە خزمەت</h3><p>ئامادەین بۆ وەڵامدانەوە و خزمەتکردن بە کاتی خۆت.</p></div>
+    <div class="feature"><div class="icon">☎️</div><h3>پشتیوانی</h3><p>ڕێگای پەیوەندیی خێرا بۆ پرسیار و داواکارییەکان.</p></div>
+  </div>
+</section>
+
+<section class="about container" id="about">
+  <div class="about-box">
+    <div class="about-img"></div>
+    <div class="about-copy">
+      <span class="tag">دەربارەمان</span>
+      <h2>Erth Khalifa Exchange</h2>
+      <p>ئێمە هەوڵ دەدەین خزمەتگوزارییەکی پیشەیی و ڕوون لە بواری گۆڕینی دراو پێشکەش بکەین. نرخەکان بە شێوەیەکی ئاسان پیشان دەدرێن تا کڕیار بە خێرایی بڕیار بدات.</p>
+      <div class="contact-mini">
+        <div class="mini"><b>📍 شوێن</b><span>هەولێر - بازاڕی نیشتیمان - نهۆمی دووەم</span></div>
+        <div class="mini"><b>☎️ ژمارەکان</b><span>07501062444<br>07701062444<br>07704097030</span></div>
+        <div class="mini"><b>✉️ ئیمەیل</b><span>kalifaexchange7@gmail.com</span></div>
+        <div class="mini"><b>◷ کاتژمێر</b><span>10:00AM - 04:00PM</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta container" id="contact">
+  <div class="cta-box">
+    <div>
+      <h3>بۆ نرخی ڕاستەوخۆ پەیوەندیمان پێوەبکە</h3>
+      <p>بۆ زانیاری زیاتر و نرخە نوێکان و بەرامبەر هەر بڕێکی عێراقی،لە ڕێگەی WhatsApp پەیوەندیمان پێوەبکە.</p>
+    </div>
+    <a class="btn btn-light" href="https://wa.me/9647501062444" target="_blank">پەیوەندی لە WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <svg viewBox="0 0 200 200" width="100%" height="100%">
+            <path d="M100 15 A 85 85 0 0 1 185 100" fill="none" stroke="#8a94a6" stroke-width="8" stroke-linecap="round"/>
+            <path d="M185 100 L175 88 M185 100 L195 88" stroke="#8a94a6" stroke-width="8" stroke-linecap="round"/>
+            <path d="M100 185 A 85 85 0 0 1 15 100" fill="none" stroke="#8a94a6" stroke-width="8" stroke-linecap="round"/>
+            <path d="M100 185 L112 175 M100 185 L112 195" stroke="#8a94a6" stroke-width="8" stroke-linecap="round"/>
+            <path d="M75 38 L75 162 M75 100 L145 162 M75 115 L145 53" stroke="#102a56" stroke-width="22" stroke-linecap="square"/>
+            <path d="M40 145 C 50 80, 110 50, 150 42" fill="none" stroke="#8a94a6" stroke-width="14" stroke-linecap="round"/>
+            <path d="M150 42 L132 42 M150 42 L145 58" stroke="#8a94a6" stroke-width="12" stroke-linecap="round"/>
+            <circle cx="112" cy="58" r="11" fill="#fff" stroke="#102a56" stroke-width="3"/>
+            <text x="112" y="63" font-family="Arial" font-size="14" font-weight="bold" fill="#102a56" text-anchor="middle">$</text>
+          </svg>
+        </div>
+        <h3>Erth Khalifa Exchange</h3>
+        <p>کۆمپانیای ئەرزی خەلیفە</p>
+      </div>
+      <div>
+        <h4>بەستەرەکان</h4>
+        <ul>
+          <li><a href="#">سەرەکی</a></li>
+          <li><a href="#rates">نرخی دراو</a></li>
+          <li><a href="#about">دەربارەمان</a></li>
+          <li><a href="#contact">پەیوەندیکردن</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>خزمەتگوزارییەکان</h4>
+        <ul>
+          <li>گۆڕینی دراو</li>
+          <li>نرخی ڕاستەوخۆ</li>
+          <li>پشتیوانی</li>
+          <li>زانیاری دراوەکان</li>
+        </ul>
+      </div>
+      <div>
+        <h4>پەیوەندی</h4>
+        <p>📍 هەولێر - بازاڕی نیشتیمان - نهۆمی دووەم</p>
+        <p>☎️ 07501062444<br>☎️ 07701062444<br>☎️ 07704097030</p>
+        <p>✉️ kalifaexchange7@gmail.com</p>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Erth Khalifa Exchange. هەموو مافەکان پارێزراون.</span>
+      <span>Designed with Chia A Hussen +9647824441606</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Google Apps Script bridge connected to Khaki Shaqlawa
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzbJTJ3Yc1YyXu5DiAVLTK6SPoj3CIGVj-IsxlqncD3MH7-X2V0fqqiYlEWZokv_dkXpg/exec';
+
+  const rateRows = {
+    USD: 1,
+    EUR: 2,
+    TRY: 3,
+    GBP: 4,
+    AED: 5,
+    SAR: 6
+  };
+
+  function formatRate(value) {
+    if (value === null || value === undefined || value === '') return '--';
+    const n = Number(value);
+    if (!Number.isFinite(n)) return '--';
+    return n.toLocaleString('en-US', {
+      maximumFractionDigits: 2
+    });
+  }
+
+  async function updateRatesFromKhaki() {
+    try {
+      const response = await fetch(scriptURL + '?t=' + Date.now(), {
+        method: 'GET',
+        cache: 'no-store'
+      });
+
+      if (!response.ok) {
+        throw new Error('HTTP ' + response.status);
+      }
+
+      const rates = await response.json();
+
+      if (rates.error) {
+        throw new Error(rates.error);
+      }
+
+      Object.entries(rateRows).forEach(([code, rowNumber]) => {
+        const row = document.querySelector(
+          '#rates tbody tr:nth-child(' + rowNumber + ')'
+        );
+
+        if (!row) return;
+
+        const buy = row.querySelector('.buy');
+        const sell = row.querySelector('.sell');
+
+        const buyValue = rates[code + '_BUY'];
+        const sellValue = rates[code + '_SELL'];
+
+        if (buyValue !== undefined) buy.textContent = formatRate(buyValue);
+        if (sellValue !== undefined) sell.textContent = formatRate(sellValue);
+      });
+
+      const updateElement = document.getElementById('last-update-time');
+      if (updateElement) {
+        const d = rates.updated_at ? new Date(rates.updated_at) : new Date();
+        updateElement.textContent = d.toLocaleTimeString('ku-IQ', {
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit'
+        });
+      }
+
+    } catch (error) {
+      console.error('هەڵە لە وەرگرتنی نرخەکان:', error);
+
+      const updateElement = document.getElementById('last-update-time');
+      if (updateElement) {
+        updateElement.textContent = 'هەڵە لە نوێکردنەوە';
+      }
+    }
+  }
+
+  // First load + automatic refresh every 30 seconds.
+  updateRatesFromKhaki();
+  setInterval(updateRatesFromKhaki, 30000);
+</script>
+</body>
+</html>
